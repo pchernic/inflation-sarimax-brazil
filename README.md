@@ -136,9 +136,10 @@ This project demonstrates:
 
 ---
 
-## Author
 
-**Paulo Chernicharo**  
+
+
+ 
 
 
 
