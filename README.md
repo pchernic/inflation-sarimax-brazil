@@ -83,23 +83,20 @@ These results are **economically coherent** and consistent with inflation dynami
 - Fully reproducible end-to-end pipeline
 
 ---
-
 ## Project Structure
 
-inflation_sarimax_brazil/
-│
-├── src/
-│ ├── fetch_macro_data.py # API data collection (IMF + FRED)
-│ ├── load_data.py # Data loading pipeline
-│ ├── sarimax_model.py # Model training & forecasting
-│ ├── diagnostics.py # Statistical tests & residual analysis
-│
-├── main.py # End-to-end execution
-├── requirements.txt
-├── .env.example # API key template
-└── README.md
-
-
+    inflation_sarimax_brazil/
+    │
+    ├── src/
+    │   ├── fetch_macro_data.py    # API data collection (IMF + FRED)
+    │   ├── load_data.py           # Data loading pipeline
+    │   ├── sarimax_model.py       # Model training & forecasting
+    │   ├── diagnostics.py         # Statistical tests & residual analysis
+    │
+    ├── main.py                    # End-to-end execution
+    ├── requirements.txt
+    ├── .env.example               # API key template
+    └── README.md
 
 
 ## How to Run
@@ -117,4 +114,31 @@ cp .env.example .env
 
 # Run the model
 python main.py
+
+## Why This Project Matters
+
+This project demonstrates:
+
+- Applied econometrics, not just machine learning
+- Real-world time-series forecasting
+- Use of exogenous macroeconomic drivers
+- Clear statistical interpretation of results
+- Clean, modular, and reproducible project structure
+
+---
+
+## Future Improvements
+
+- Lag selection for exogenous variables
+- Out-of-sample backtesting
+- Scenario-based forecasting
+- Model comparison (VAR, Bayesian approaches)
+
+---
+
+## Author
+
+**Paulo Chernicharo**  
+
+
 
